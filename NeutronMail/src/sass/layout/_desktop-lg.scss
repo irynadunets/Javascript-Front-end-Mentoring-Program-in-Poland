@@ -1,0 +1,619 @@
+html{
+  width:100%;
+  overflow-x:hidden;
+}
+
+body {
+  width:100%;
+  overflow-x:hidden;
+  background-color: $backround-color;
+  height: 3141px;
+  @extend %margin;
+}
+
+.wrapper {
+  width: 1820px;
+  height: 800px;
+  @extend %margin;
+}
+
+.header__wrapper {
+  background-image:
+  url('../assets/header/neutronmail.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0% auto;
+  text-align: $center-align;
+  max-width: 100%;
+  @extend %flex-row-space-between;
+}
+
+.header__navigation {
+  width: 25%;
+  margin: 3.3em 0em 0em 21em;
+  padding: 0em 0em 0em 0em;
+}
+
+.header__logo-language{
+  padding: 5.5em 5em 0em 9.3em;
+  @extend %flex-column;
+}
+
+.header__logo-line {
+  @include font(30px, 0px, 14px, $text-color, "Titillium Web", 700);
+  text-align: $center-align;
+  margin: 0em 1em -0.2em 0em;
+}
+
+.logo-line{
+  color: $buttons-color;
+}
+
+.language__navigation {
+  @extend %flex-row-space-between;
+  padding: 1.5em 0em 0em 0em;
+}
+
+.navigation{
+  color: $menu-color;
+  @extend %reset-list-marker;
+  @extend %flex-row-space-between;
+}
+
+.language__link{
+  @include font(14px, 0px, 1, $menu-color, "Titillium Web", 400);
+  padding: 0em 0em 0em 0.8em;
+}
+
+.language__link:nth-child(even) {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.language__link:after {
+  @extend %line-after;
+}
+
+.language__link:hover:after,
+.language__link:focus:after {
+    width: 100%;
+}
+
+.navigation__link{
+  @include font(16px, 0px, 56px, $link-color, "Titillium Web", 400);
+}
+
+.navigation__link:after {
+  @extend %line-after;
+}
+
+.navigation__link:hover:after,
+.navigation__link:focus:after {
+    width: 100%;
+}
+
+.header__buttons{
+  width: 15%;
+  margin: 4em 9.5em 0em 0em;
+}
+
+.button__log{
+  margin: 2em 2em 0em 0em;
+  background-color: $backround-color;
+  font-weight: bold;
+  color: #000000;
+}
+
+.button__log::before{
+  content:url('../assets/header/log-button.jpg');
+  position:relative;
+  z-index:100000;
+  left: -10px;
+  top: 5px;
+}
+
+.button__sign{
+  @include button-shadow(94px, 40px, 20px, $buttons-color, 16px, $backround-color, 700);
+  margin: 0em 0.5em 0em 0em;
+}
+
+.button__sign:hover {
+  opacity: $opacity-hover;
+}
+
+.button__log:hover {
+  opacity: $opacity-hover;
+}
+
+.log__in{
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 56px;
+  background-color: white;
+  font-weight: 700;
+  font-family: "Titillium Web";
+  margin: 0em 1.3em 0em 0em;
+}
+
+.about {
+  color: $buttons-color;
+}
+
+.about__content{
+  margin: 2.1em 0em 0em 0em;
+}
+
+.about__title{
+  @include font(60px, 1px, 1, $link-color, "Titillium Web", 700);
+  text-align: $center-align;
+  margin: -0.3em 0.2em 0em 1.8em;
+}
+
+.about__description{
+  width: 1400px;
+  height: 228px;
+  @include font(35px, 1px, normal, $link-color, "Titillium Web", 600);
+  text-align: $center-align;
+  margin: 0.3em 0em 0.3em 2.4em;
+}
+
+.description{
+  color: $part-text-color;
+}
+
+.about__buttons{
+  margin: -8.3% 0% 0% 39.4%;
+}
+
+.button__account{
+  @include button-shadow(246px, 56px, 28px, $button-account-color, 16px, $backround-color, 700);
+}
+
+.button__account:hover {
+  opacity: $opacity-hover;
+}
+
+.button__apple{
+  @include button(46px, 46px, 23px);
+  background-color: $button-social-color;
+  margin: 0.5em 1.4em 0em 1.6em;
+}
+
+.button__apple:hover {
+  opacity: $opacity-hover;
+}
+
+.button__google{
+  @include button(46px, 46px, 23px);
+  background-color: $button-social-color;
+}
+
+.button__google:hover {
+  opacity:$opacity-hover;
+}
+
+.fa{
+  font-size:24px;
+  letter-spacing: 0px;
+  line-height: 37px;
+  color: $link-color;
+}
+
+.about__wrapper{
+  @extend %flex-row;
+  margin: -31.5em 0em 0em 7.6em;
+}
+
+.social__buttons{
+  margin: 1em 0em 0em 8.8em;
+  @extend %flex-column;
+}
+
+.social:hover {
+  opacity: $opacity-hover;
+}
+
+.promo-wrapper{
+  @extend %flex-row-start;
+  margin: -8.2% 5% 0em 14.7%;
+}
+
+.promo__article{
+  @extend %flex-column;
+  margin: -2.5% 2.5% 0% 2.7%;
+}
+
+.promo__block{
+  @extend %flex-row;
+}
+
+.promo__image{
+  margin: -1.5% 1.5% 5% 0.5%;
+}
+
+.promo__title{
+  @include font(30px, 0px, 37px, $promo-color, "Titillium Web", 400);
+}
+
+.promo__name{
+  @include font(16px, 0px, 37px, $promo-color, "Titillium Web", 400);
+  margin: -2% 0% 0% 0%;
+}
+
+.promo__text{
+  width: 368px;
+  height: 267px;
+  @include font(14px, 0px, 22px, $promo-text, "Titillium Web", 400);
+  margin: 1% 0% 0% 3.0%;
+}
+
+.devider__1{
+  @include devider(1px, 210px, $devider-color);
+  margin: -11% 0% 0% 0%;
+}
+
+.devider__2{
+  @include devider(1px, 433px, $devider-color);
+  margin: -2.2% 0% 0% -1%;
+}
+
+.promo__devider{
+  @extend %flex-row;
+}
+
+.devider__3{
+  @include devider(970px, 1px, #bfbfbf);
+  margin: -2% 0% 0% 0%;
+}
+
+.devider__4{
+  @include devider(334px, 22px, $backround-color);
+  border-radius: 31px;
+  border: 1px solid $devider-color;
+  margin: -3.7% 0% -3.7% 0%;
+  padding: 1% 0% 1% 0%;
+  text-align: $center-align;
+}
+
+.main{
+  color: $part-text-color;
+}
+
+.main__title{
+  @include font(60px, 1px, 22px, $main-title-color, "Titillium Web", 400);
+  margin: -7% 0% 0% 37%;
+}
+
+.main__text{
+  width: 638px;
+  height: 138px;
+  @include font(24px, 0px, 22px, $promo-text, "Titillium Web", 400);
+  text-align: right;
+  margin: 2% 0% 0% 26%;
+}
+
+.testimonials__wrapper{
+  background-image:
+  url('../assets/testimonals/background.png');
+background-position: top 240px right;
+}
+
+.testimonials-list{
+  @extend %reset-list-marker;
+  @extend %flex-row-start;
+  margin: 1% 0% 0% -1%;
+}
+
+.testimonials__link{
+  margin: 1% 0% 0% 0%;
+}
+
+.testimonials__review{
+  @extend %flex-row-space-around;
+  margin: 3% 0% 3% 10%;
+}
+
+.testimonials__selections{
+margin: 0% -23% 0% 0%;
+}
+
+.selection-selected{
+  width: 13px;
+  height: 13px;
+  border-radius: 7px;
+  background-color: #101010;
+  margin: 70% 0% 80% 0%;
+}
+
+.selection{
+  @include button(11px, 11px, 5px);
+  background-color: $text-color;
+  margin: 80% 0% 80% 0%;
+}
+
+.testimonials__blockquote{
+  width: 500px;
+  height: 125px;
+  @include font(24px, 0px, 31px, #101010, "Malaga OT CE", 400);
+  font-style: italic;
+  text-align: left;
+  margin: 0% 45.5% 0% 2%;
+}
+
+.testimonials__cite{
+  font-size: 16px;
+  margin: 0% 0% 0% 3%;
+}
+
+.testimonials__content{
+   margin: 0% 2% 0% 36%;
+}
+
+.testimonials__title{
+  @include font(36px, 0px, 22px,$main-title-color, "Titillium Web", 400);
+  margin: 13% 0% 2% 11%;
+}
+
+.testimonials__context{
+  width: 461px;
+  height: 138px;
+  @include font(16px, 0px, 22px, $promo-text, "Titillium Web", 400);
+  text-align: right;
+}
+
+.testimonials__buttons{
+  margin: -3.5% 0% 0% 7%;
+}
+
+.button-apple{
+  margin: 0% 1% 0% 0%;
+}
+
+.button-apple:hover {
+  opacity: $opacity-hover;
+}
+
+.button-google{
+  position: relative;
+  z-index: 1000;
+}
+
+.button-google:hover {
+  opacity: $opacity-hover;
+}
+
+.testimonials__image{
+  position: relative;
+  margin: -27.0% 0% 0% 52%;
+  z-index: 0;
+}
+
+.devider__5{
+  @include devider(1476px, 1px, $devider-color);
+  margin: -1.5% 0% 0% 22%;
+}
+
+.sponsorship__content{
+  margin: 0% 0% 0% 1%;
+}
+
+.sponsorship__title{
+  @include font(36px, 0px, 30px, $main-title-color, "Titillium Web", 400);
+  text-align: $center-align;
+  margin: 4.2% 3% 0% 0%;
+}
+
+.sponsorship__context{
+  @include font(29px, 0px, 30px, $main-title-color, "Titillium Web", 400);
+  text-align: $center-align;
+  margin: 0.5% 3% 0% 0%;
+}
+
+.sponsorship__buttons{
+  margin: 2.3% 0% 0% 36%;
+}
+
+.button__upgrade{
+  @include button-shadow(246px, 56px, 28px, $button-account-color, 16px, $backround-color, 700);
+  margin: 0% 4.1% 0% 0%;
+}
+
+.button__upgrade:hover {
+  opacity: $opacity-hover;
+}
+
+.fa-cloud-upload{
+  font-size: 16px;
+  font-weight: 700;
+  color: $backround-color;
+}
+
+.button__donate{
+  @include button-shadow(166px, 56px, 28px, #5e7bea, 16px, $backround-color, 700);
+}
+
+.button__donate:hover {
+  opacity: $opacity-hover;
+}
+
+.sponsorship__devider{
+  @include devider(1476px, 1px, $devider-color);
+  margin: 4.7% 0% 0% -5.2%;
+}
+
+.sponsorship__text{
+  @include font(14px, 0px, 22px, $promo-text, "Titillium Web", 400);
+  text-align: right;
+  margin: 0.8% 24% 0% 0%;
+}
+
+.sponsorship__list{
+  @extend %reset-list-marker;
+  @extend %flex-row-end;
+  margin: 0% 21% 0% 0%;
+}
+
+.sponsorship__link{
+  margin: 0% -3% 0% 3%;
+}
+
+.sponsorship__image{
+  margin: -3% 0% 0% 0%;
+}
+
+.link{
+  margin: -2.8% 3% 0% 0%;
+}
+
+.devider__6{
+  @include devider(1px, 447px, $devider-color);
+}
+
+.devider__7{
+  @include devider(1px, 131px, $devider-color);
+  margin: 1% -1.5% 0% 1.6%;
+}
+
+.devider__8{
+  @include devider(1px, 331px, $devider-color);
+  margin: 0% -11.8% 0% 1.9%;
+}
+
+.footer__wrapper{
+  @extend %reset-list-marker;
+  @extend %flex-row-start;
+  margin: -15% 0% 0% 9.7%;
+}
+
+.navigation__mail{
+  width: 293px;
+  height: 202px;
+  @include font(14px, 0px, 23px, $navigation-color, "Titillium Web", 400);
+  text-align: left;
+  @extend %reset-list-marker;
+  @extend %flex-column;
+  margin: 1.5% 0% 0% 1%;
+}
+
+.sponsorship__link{
+  text-decoration: none;
+  color: $devider-color;
+}
+
+.contact-link{
+  @include contact-item(400);
+}
+
+.contact-mail{
+  @include contact-item(700);
+}
+
+.contact-link:after {
+  @extend %line-after;
+}
+
+.contact-link:hover:after,
+.contact-link:focus:after {
+    width: 100%;
+}
+
+
+.contact{
+  margin: 8% 0% 0% 0%;
+}
+
+.contact-web{
+  @include contact-item(700);
+}
+
+.contact-web:after {
+  @extend %line-after;
+}
+
+.contact-web:hover:after,
+.contact-web:focus:after {
+    width: 100%;
+}
+
+.company{
+  width: 293px;
+  height: 202px;
+  margin: 0.5% 0% 0% 7%;
+}
+
+.company__link:before {
+  float: right;
+  width: 2px;
+  height: 2px;
+  content: "▪";
+  margin: 0% 0% 0% 2.5%;
+}
+
+.company__title{
+  text-align: right;
+  width: 293px;
+  @include font(18px, 0px, 23px, $navigation-color, "Titillium Web", 700);
+  margin: -0.5% 0% 9.5% 0%;
+}
+
+.company__link{
+  @include font(14px, 0px, 22px, $promo-text, "Titillium Web", 400);
+  text-align: right;
+}
+
+.company__link:hover {
+    color: $buttons-color;
+}
+
+.navigation__company{
+  list-style: none;
+}
+
+.footer__company{
+  margin: 0.5% 0% 0% -5%;
+}
+
+.social__navigation{
+  width: 429px;
+  @include font(12px, 0px, 23px, $navigation-color, "Titillium Web", 400);
+  text-align: right;
+  @extend %flex-row-space-between;
+  margin: -8.4em 0em 0em 12.5em;
+}
+
+.social__link{
+  @include font(12px, 0px, 23px, $menu-color, "Titillium Web", 400);
+  padding: 0em 0em 0em 1em;
+}
+
+.social__link:nth-child(even) {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.social__link:after {
+  @extend %line-after;
+}
+
+.social__link:hover:after,
+.social__link:focus:after {
+    width: 100%;
+}
+
+.footer__copyright{
+  width: 429px;
+  @include font(12px, 0px, 23px, $navigation-color, "Titillium Web", 400);
+  text-align: right;
+  margin: -0.2% 0% 0% 2.5%;
+}

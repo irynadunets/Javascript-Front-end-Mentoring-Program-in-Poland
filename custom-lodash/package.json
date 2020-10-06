@@ -1,0 +1,23 @@
+{
+  "name": "custom-lodash",
+  "version": "1.0.0",
+  "description": "Private repository for @irynadunets # RS-School-PL---Custom Lodash >https://github.com/rolling-scopes-school/tasks/blob/master/tasks/custom-lodash(unit%20%20tests).md",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "npm test -- --coverage"
+  },
+  "author": "Iryna Dunets",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-plugin-jest": "^24.0.0",
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.2.0"
+  }
+}

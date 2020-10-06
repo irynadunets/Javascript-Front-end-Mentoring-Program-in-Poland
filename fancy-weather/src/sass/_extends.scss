@@ -1,0 +1,60 @@
+%flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+%flex-row {
+  @extend %flex;
+  justify-content: space-around;
+}
+
+%box-shadow-button {
+  box-shadow: 5px 5px 2px -2px #5540cd;
+}
+
+%box-shadow {
+  box-shadow: 5px 5px 2px -2px #a5a5a5;
+}
+
+%button {
+  height: 30px;
+  line-height: 30px;
+  margin: 3px;
+  padding: auto;
+  border-radius: 50px;
+  float: left;
+  color: #FFF;
+  @extend %box-shadow;
+  background-image: linear-gradient(to top, #5540cd, #493fc7, #3c3ec0, #2e3dba, #1e3bb3);
+  margin: auto;
+}
+
+%big-button{
+  margin: 1%;
+  height: 80px;
+  border-radius: 5px;
+  @extend %box-shadow-button;
+}
+
+%small-button{
+  width: 100px;
+  @extend %button;
+}
+
+%temperature-item {
+  color:$text-color;
+  font-size: $font-item;
+  float:right;
+}
+
+%date-item{
+  color:$text-color;
+  font-size: 5rem;
+  margin: 1% 1%;
+}
+
+%whether-item{
+  color:$text-color;
+  margin-bottom: $margin-whether;
+}

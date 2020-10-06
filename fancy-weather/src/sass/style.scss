@@ -1,0 +1,613 @@
+@import '_reset.scss';
+@import '_variables.scss';
+@import '_extends.scss';
+
+body {
+  background-image:
+    url('../assets/background/day-summer-1.jpg');
+  $backround-color: $backround-color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+button:hover {
+  transition: all 2s ease;
+  transform: translateX(10px);
+  cursor: pointer;
+  @extend %box-shadow;
+}
+
+.header {
+  width: 100%;
+  margin:$margin;
+  @extend %flex-row;
+}
+
+.header-buttons {
+  @extend %flex-row;
+  width: 30%;
+}
+
+.refresh-button {
+  @extend %big-button;
+}
+
+.audio-button {
+  @extend %big-button;
+}
+
+#google_translate_element{
+  @extend %button;
+}
+
+.temperature-buttons{
+  @extend %flex-row;
+  margin: auto;
+}
+
+.farengeit-button{
+  @extend %small-button;
+}
+
+.celcius-button{
+  @extend %small-button;
+}
+
+.search-form{
+  width: 40%;
+  @extend %flex-row;
+}
+
+.input{
+  @extend %box-shadow-button;
+  color: #5540cd;
+  height: 30px;
+  width: 400px;
+  border-radius: 50px;
+  float: left;
+  margin-top: 2.5em;
+  padding-left: 5em;
+}
+
+.input::placeholder {
+  color: #5540cd;
+  font-size: 1.2em;
+  font-style: italic;
+  padding-left: 3em;
+}
+
+.search-button{
+  @extend %small-button;
+}
+
+.wrapper{
+  margin: $margin;
+  width: 100%;
+}
+
+.whether-currently{
+   @extend %flex;
+   margin: 0% 3%;
+}
+
+.place{
+  @extend  %date-item;
+}
+
+.date{
+  @extend  %date-item;
+}
+
+.time{
+  @extend  %date-item;
+}
+
+.temperature{
+  color:$text-color;
+  font-size: 15rem;
+  margin: 1% 2%;
+}
+
+.icon-currently{
+  width: 20rem;
+  height: 20rem;
+  margin: 0% 0%;
+  animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+  0%   {opacity: 1; }
+  0%   {opacity: 0.8; }
+  100% {opacity: 0.4; }
+}
+
+.whether-data{
+  color:$text-color;
+  margin: 7% 0%;
+}
+
+.description{
+  @extend %whether-item;
+}
+
+.feels-like{
+  @extend %whether-item;
+}
+
+.wind{
+  @extend %whether-item;
+}
+
+.humidity{
+  @extend %whether-item;
+}
+
+.whether-forecast{
+  @extend %flex;
+  justify-content: flex-start;
+  margin: 0% auto;
+  padding: 0% 0%;
+}
+
+.firstDayWhetherForecast{
+  margin: $margin-item-forecast;
+}
+
+.secondDayWhetherForecast{
+  margin: $margin-item-forecast;
+}
+
+.thirdDayWhetherForecast{
+  margin: $margin-item-forecast;
+}
+
+.day1{
+color:$map-color;
+}
+
+.temperature1{
+  @extend %temperature-item;
+}
+
+.icon1{
+  font-size: $font-item;
+
+}
+.description1{
+  color:$text-color;
+}
+
+.day2{
+  color:$map-color;
+}
+
+.temperature2{
+   @extend %temperature-item;
+}
+
+.icon2{
+  font-size: $font-item;
+}
+
+.description2{
+  color:$text-color;
+}
+
+.day3{
+  color:$map-color;
+}
+
+.temperature3{
+  @extend %temperature-item;
+}
+
+.icon3{
+  font-size: $font-item;
+}
+
+.description3{
+  color:$text-color;
+}
+
+.map-location{
+  width: 30%;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+.latitude{
+  color:	$loc-color;
+  margin: 5% 0% 1% 30%;
+}
+
+.longitude{
+  color:	$loc-color;
+  margin: 5% 0% 0% 60%;
+}
+
+#map {
+  height: 20rem;
+  background-color: grey;
+  border-radius: 5px;
+  @extend %box-shadow-button;
+}
+
+.search-form{
+  position: relative;
+}
+
+.input-icon{
+  position: relative;
+  right: 33px;
+  top: calc(50% - 0.3em);
+  color: #5540cd;
+  text-align: center;
+}
+
+.input-iconV{
+  position: relative;
+  right: 3em;
+  top: 6em;
+  color: red;
+  text-align: center;
+}
+
+@media (max-width: $layout-breakpoint-big) and (min-width: $layout-breakpoint-medium){
+
+  %flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  %icon {
+    text-align: center;
+    margin: $margin-middle;
+    top: 1%;
+    right: 1%;
+  }
+
+   body{
+     margin: $margin-resize;
+   }
+
+   .header-buttons {
+     width: 50%;
+   }
+
+  .search-form {
+    @extend %flex-column;
+  }
+
+  .audio-button {
+    margin: $margin-middle;
+  }
+
+  .refresh-button {
+    margin: $margin-middle;
+  }
+
+  .input{
+    width: 10rem;
+  }
+
+  .input-icon{
+    @extend %icon;
+  }
+
+  .input-iconV{
+    @extend %icon;
+  }
+
+  .temperature-buttons {
+    margin: $margin;
+  }
+
+  .map-location{
+    width: 70%;
+    margin: 2% auto 15% auto;
+  }
+
+  .whether-data {
+    margin: 7% 5%;
+    color: orange;
+  }
+
+  .whether-forecast {
+    padding: 0% 15%;
+}
+
+  .firstDayWhetherForecast {
+    margin-bottom: $margin-bottom;
+  }
+
+  .secondDayWhetherForecast {
+    margin-bottom: $margin-bottom;
+  }
+
+  .thirdDayWhetherForecast {
+    margin-bottom: $margin-bottom;
+  }
+
+
+  .day1 {
+    color: $backround-color;
+  }
+
+  .temperature1{
+    color: $backround-color;
+  }
+
+  .description1 {
+    color: $backround-color;
+
+  }
+
+  .day2 {
+    color: $backround-color;
+  }
+
+  .temperature2 {
+    color: $backround-color;
+  }
+
+  .description2 {
+    color: $backround-color;
+  }
+
+  .day3 {
+    color: $backround-color;
+  }
+
+  .temperature3 {
+    color: $backround-color;
+  }
+
+  .description3 {
+    color: $backround-color;
+  }
+}
+
+@media (max-width: $layout-breakpoint-medium) and (min-width: $layout-breakpoint-small){
+
+  %flex-column-medium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  %iconm {
+    text-align: center;
+    margin: $margin-middle;
+    top: 1%;
+    right: 1%;
+  }
+
+   body{
+     margin: $margin-resize;
+   }
+
+   .header-buttons {
+     width: 50%;
+   }
+
+  .search-form {
+    @extend %flex-column-medium;
+  }
+
+  .audio-button {
+    margin: $margin-middle;
+  }
+
+  .refresh-button {
+    margin: $margin-middle;
+  }
+
+  .input{
+    width: 10rem;
+  }
+
+  .input-icon{
+    @extend %iconm;
+  }
+
+  .input-iconV{
+    @extend %iconm;
+  }
+
+  .temperature-buttons {
+    margin: $margin;
+  }
+
+  .whether-data {
+    margin: 7% 5%;
+    color: orange;
+  }
+
+  .whether-forecast {
+    @extend %flex-column-medium;
+    margin: 0% auto;
+    padding: 0% auto;
+  }
+
+  .whether-currently {
+    margin: 10% 3%;
+  }
+
+  .firstDayWhetherForecast {
+    margin-bottom: $margin-bottom;
+  }
+
+  .secondDayWhetherForecast {
+    margin-bottom: $margin-bottom;
+  }
+
+  .thirdDayWhetherForecast {
+    margin-bottom: $margin-bottom;
+  }
+
+  .day1 {
+    color: $backround-color;
+  }
+
+  .temperature1{
+    color: $backround-color;
+  }
+
+  .description1 {
+    color: $backround-color;
+  }
+
+  .day2 {
+    color: $backround-color;
+  }
+
+  .temperature2 {
+    color: $backround-color;
+  }
+
+  .description2 {
+    color: $backround-color;
+  }
+
+  .day3 {
+    color: $backround-color;
+  }
+
+  .temperature3 {
+    color: $backround-color;
+  }
+
+  .description3 {
+    color: $backround-color;
+  }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+
+  %flex-column-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  %icons {
+    text-align: center;
+    margin: $margin-middle;
+    top: 1%;
+    right: 1%;
+  }
+
+  body{
+    margin: $margin-resize;
+  }
+
+  .header {
+    @extend %flex-column-small;
+  }
+
+  .header-buttons {
+    @extend %flex-column-small;
+  }
+
+  .audio-button {
+    margin: $margin-middle;
+  }
+
+  .refresh-button {
+    margin: $margin-middle;
+  }
+
+  .search-form{
+    @extend %flex-column-small;
+  }
+
+  .input{
+    width: 10rem;
+  }
+
+  .input-icon{
+    @extend %icons;
+  }
+
+  .whether-currently{
+    @extend %flex-column-small;
+  }
+
+  .input-iconV{
+    @extend %icons;
+  }
+
+  .place, .date, .time {
+    margin: $margin-middle;
+    font-size: 3rem;
+ }
+
+ .temperature {
+    margin: $margin-middle;
+    font-size: 10rem;
+ }
+
+.description{
+  color: $backround-color;
+}
+
+.feels-like{
+  color: $backround-color;
+}
+
+.wind{
+  color: $backround-color;
+}
+
+.humidity{
+  color: $backround-color;
+}
+
+.whether-forecast {
+  @extend %flex-column-small;
+  padding: 10% 0%;
+}
+
+.day1 {
+  color: $backround-color;
+}
+
+.temperature1{
+  color: $backround-color;
+}
+
+.description1 {
+  color: $backround-color;
+  margin-bottom: $margin-bottom-resize;
+}
+
+.day2 {
+  color: $backround-color;
+}
+
+.temperature2 {
+  color: $backround-color;
+}
+
+.description2 {
+  color: $backround-color;
+  margin-bottom: $margin-bottom-resize;
+}
+
+.day3 {
+  color: $backround-color;
+}
+
+.temperature3 {
+  color: $backround-color;
+}
+
+.description3 {
+  color: $backround-color;
+  margin-bottom: $margin-bottom-resize;
+}
+
+}

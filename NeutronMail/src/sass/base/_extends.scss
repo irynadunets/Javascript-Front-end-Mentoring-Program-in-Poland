@@ -1,0 +1,59 @@
+@import '_variables.scss';
+
+%margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%reset-list-style {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%reset-list-marker {
+  list-style: none;
+  text-decoration: none;
+}
+
+%line-after {
+  background-color: $menu-color;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  position: relative;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+%flex-row-space-between {
+  @extend %flex-row;
+  justify-content:space-between;
+}
+
+%flex-row-space-around {
+  @extend %flex-row;
+  justify-content: space-around;
+}
+
+%flex-row-start {
+  @extend %flex-row;
+  justify-content: flex-start;
+}
+
+%flex-row-end {
+  @extend %flex-row;
+  justify-content: flex-end;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}

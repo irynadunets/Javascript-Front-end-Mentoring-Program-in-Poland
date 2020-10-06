@@ -1,0 +1,25 @@
+.author{
+  color: white;
+  font-size: 24px;
+  padding: 0% 2%;
+}
+
+.message-text {
+  font-style: italic;
+  background-color: #7fcfd0;
+  border-radius: 26px 26px 26px 26px;
+  -moz-border-radius: 26px 26px 26px 26px;
+  -webkit-border-radius: 26px 26px 26px 26px;
+  padding: 0.5% 2%;
+  margin: 0.5% 0.5%;
+  color: rgb(0,0,128);
+  text-align: left;
+}
+
+.message-date {
+  color: #d3d3e0;
+  text-align: left;
+  padding: 0% 5%;
+  font-size: 90%;
+  font-style: italic;
+}

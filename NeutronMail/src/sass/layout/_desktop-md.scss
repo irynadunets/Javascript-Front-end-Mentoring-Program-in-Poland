@@ -1,0 +1,97 @@
+@media (max-width: 1760px) and (min-width: 1200px) {
+
+  %flex-column-wide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__wrapper{
+    @extend %flex-column-wide;
+    margin: -31.5em 0em 0em 0em;
+  }
+
+  .header__logo-language{
+    @extend %flex-column-wide;
+    padding: 5.5em 0em 0em 5em;
+  }
+
+  .header__navigation {
+    width: 40%;
+    margin: 3.3em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+  }
+
+  .navigation__link{
+    margin: 0em 0.1em 0em 0.1em;
+  }
+
+  .about__title{
+    text-align: left;
+    margin: 0em 0em 0em 5em;
+  }
+
+  .promo-wrapper{
+    margin: -15% 5% 0em 14.7%;
+  }
+
+  .testimonials__review{
+    margin: 3% 0% 3% 30%;
+  }
+
+  .testimonials__selections{
+    margin: 0% -14% 0% 0%;
+  }
+
+  .testimonials__wrapper{
+    margin: 0em 0em 0em -21em;
+  }
+
+  .testimonials__image{
+    position: relative;
+    z-index: 0;
+  }
+
+  .sponsorship__title{
+    margin: 4.2% 15% 0% 0%;
+  }
+
+  .sponsorship__context{
+    margin: 0.5% 15% 0% 0%;
+  }
+
+  .sponsorship__buttons{
+    margin: 2.3% 0% 0% 32%;
+  }
+
+  .sponsorship__text{
+    margin: 0.8% 39% 0% 0%;
+  }
+
+  .sponsorship__list{
+    margin: 0% 36% 0% 0%;
+  }
+
+  .footer__wrapper{
+    margin: -15% 0% 0% 0%;
+  }
+
+ .navigation__mail{
+   margin: 1.5% 0% 0% 0%;
+ }
+
+ .company{
+   width: 293px;
+   height: 202px;
+   margin: 0.5% 0% 0% 3%;
+ }
+
+  .footer__company{
+    margin: 0.5% 0% 0% 0%;
+  }
+
+  .devider__6{
+    width: 1px;
+    height: 250px;
+  }
+
+}

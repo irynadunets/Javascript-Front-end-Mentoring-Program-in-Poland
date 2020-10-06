@@ -1,0 +1,53 @@
+.new-message {
+  padding: 0.5% 0.5%;
+  margin: 0.5% 0.5%;
+  background: rgb(232,232,241);
+  background: -moz-linear-gradient(90deg, rgba(232,232,241,0) 13%, rgba(160,205,226,0) 79%);
+  background: -webkit-linear-gradient(90deg, rgba(232,232,241,0) 13%, rgba(160,205,226,0) 79%);
+  background: linear-gradient(90deg, rgba(232,232,241,0) 13%, rgba(160,205,226,0) 79%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8e8f1",endColorstr="#a0cde2",GradientType=1);
+}
+
+.input-message{
+  width: 85vw;
+  height: 10vh;
+  margin:0% 1% 0% 0%;
+  padding:0% 1%;
+  background: rgb(245,248,252);
+  background: -moz-radial-gradient(circle, rgba(245,248,252,0.038252801120448154) 0%, rgba(152,161,171,1) 96%, rgba(135,145,156,1) 98%, rgba(108,120,133,1) 100%, rgba(41,57,75,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(245,248,252,0.038252801120448154) 0%, rgba(152,161,171,1) 96%, rgba(135,145,156,1) 98%, rgba(108,120,133,1) 100%, rgba(41,57,75,1) 100%);
+  background: radial-gradient(circle, rgba(245,248,252,0.038252801120448154) 0%, rgba(152,161,171,1) 96%, rgba(135,145,156,1) 98%, rgba(108,120,133,1) 100%, rgba(41,57,75,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f8fc",endColorstr="#29394b",GradientType=1);
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border: 6px solid #d3d3e0;
+}
+
+.send-message {
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+  margin-top: 1%;
+}
+
+.send-message:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+
+.send-message:active {
+	position:relative;
+	top:1px;
+}

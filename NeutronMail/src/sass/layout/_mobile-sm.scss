@@ -1,0 +1,62 @@
+@media (max-width: 330px) {
+
+  .about__title {
+    margin: 0em 0em 0em 0.5em;
+  }
+
+  .button__apple {
+    /* width: 46px; */
+    height: 46px;
+    border-radius: 23px;
+    background-color: #4a1c50;
+    margin: 0.5em 1.4em 0em 1.6em;
+}
+
+.button__google {
+    /* width: 46px; */
+    height: 46px;
+    border-radius: 23px;
+    background-color: #4a1c50;
+}
+
+.testimonials-list {
+    margin: 1% 0% 0% -2%;
+}
+
+.social__buttons {
+    margin: 1em 0em 0em 5em;
+}
+
+.testimonials__blockquote {
+    font-size: calc(9px + 1.3vw);
+    width: 300px;
+    margin: 0% 53% 0% 2%;
+}
+
+.testimonials__context {
+    width: 306px;
+}
+
+.testimonials__buttons {
+  margin: 0% 0% 0% 5%;
+}
+
+.button-apple {
+   margin: 0% 0% 0% 0%;
+   width: 0px;
+}
+
+.navigation__mail {
+    margin: -20% 0% 0% 5%;
+}
+
+.social__navigation {
+    margin: 0.1% 0% 0% -12%;
+}
+
+.footer__copyright {
+  margin: 0.1% 0% 0% 6%;
+  text-align: left;
+}
+
+}

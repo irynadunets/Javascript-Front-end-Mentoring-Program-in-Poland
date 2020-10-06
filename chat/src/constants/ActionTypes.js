@@ -1,0 +1,5 @@
+export const ADD_NICKNAME = 'ADD_NICKNAME'
+export const ADD_MESSAGE = 'ADD_MESSAGE'
+export const SEND_MESSAGE = 'SEND_MESSAGE'
+export const REMEMBER_ME = 'REMEMBER_ME'
+export const RE_CONNECT = 'RE_CONNECT'

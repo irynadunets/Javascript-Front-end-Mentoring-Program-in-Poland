@@ -1,0 +1,109 @@
+:root {
+    --keyboard-background: rgb(120, 9, 129);
+    --keys-functional-background: rgb(50, 39, 79);
+    --keys-functional-color: rgb(128,128,128);
+    --keys-background: rgb(120, 120, 120);
+    --keys-pressed-background: rgb(118, 174, 104);
+    --keys-pressed-shadow: rgba(118, 174, 104, 0.6);
+    --margin: 1% auto;
+}
+
+.container {
+  width: 100%;
+  margin: var(--margin);
+}
+
+.textarea {
+   display: block;
+   height: 30%;
+   width: 800px;
+   margin: var(--margin);
+   padding: 1%;
+   border: 10px solid var(--keyboard-background);
+   border-radius: 4%;
+   font-size: 20px;
+   font-weight: 800;
+   color: var(--keys-functional-background);
+   outline: none;
+   resize: vertical;
+}
+
+.keyboard {
+    width: 710px;
+    padding: 15px;
+    margin: auto;
+    background-color: var(--keyboard-background);
+}
+
+.keys {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.button {
+    height: 40px;
+    min-width: 40px;
+    border-radius: 3px;
+    background-color: var(--keys-background);
+    margin: 3px;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+}
+
+.wide {
+    min-width: 95px;
+    background-color: var(--keys-functional-background);
+    color: var(--keys-functional-color);
+}
+
+.tab {
+    min-width: 50px;
+    background-color: var(--keys-functional-background);
+    color: var(--keys-functional-color);
+}
+
+.enter {
+    width: 90px;
+    background-color: var(--keys-functional-background);
+    color: var(--keys-functional-color);
+}
+
+.arrows {
+    background-color: var(--keys-functional-background);
+    color: var(--keys-functional-color);
+}
+
+.ctrl {
+    min-width: 60px;
+    background-color: var(--keys-functional-background);
+    color: var(--keys-functional-color);
+}
+
+.space {
+    min-width: 285px;
+    background-color: var(--keys-functional-background);
+}
+
+.button_pressed {
+  background-color: var(--keys-pressed-background);
+  -moz-box-shadow: 5px 5px 5px var(--keys-pressed-shadow);
+  -webkit-box-shadow: 5px 5px 5px var(--keys-pressed-shadow);
+  box-shadow: 5px 5px 5px var(--keys-pressed-shadow);
+  top: 10%;
+  transition: .5s all;
+}
+
+.info {
+    font-weight: 500;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: var(--margin);
+    text-align: center;
+}
