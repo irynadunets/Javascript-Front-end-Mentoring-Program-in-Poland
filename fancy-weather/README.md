@@ -13,5 +13,5 @@ Implement a weather app (weather forecast).
 >git clone {repository URL}
 
 # Running application
->npm start
->for audio forecast press > button near the red microphone icon
+> npm start
+> for audio forecast press button near the red microphone icon
