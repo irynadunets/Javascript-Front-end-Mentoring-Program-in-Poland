@@ -10,8 +10,8 @@ Implement a weather app (weather forecast).
 - for use Google Maps API add your own key=API_KEY
 
 # Downloading
->git clone {repository URL}
+- git clone {repository URL}
 
 # Running application
-> npm start
-> for audio forecast press button near the red microphone icon
+- npm start
+- for audio forecast press button near the red microphone icon
