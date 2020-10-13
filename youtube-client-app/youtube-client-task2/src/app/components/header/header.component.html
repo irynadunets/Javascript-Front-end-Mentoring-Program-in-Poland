@@ -1,0 +1,7 @@
+<div class='container'>
+   <app-search-box class='search_box' (search)= 'onSearch($event)' (show)= 'onSortShow($event)'></app-search-box>
+   <app-login class='login'></app-login>
+</div>
+<div class='container' *ngIf = 'isShow' >
+  <app-filter-box class='filter' (sortw)= 'onSort($event)'  (sortd)= 'onDate($event)' (sortv)= 'onViews($event)'></app-filter-box>
+</div>

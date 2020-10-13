@@ -1,0 +1,48 @@
+.tabs{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.label{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration-line: none;
+  margin: 0.5% 1% 0% 0%;
+  color: #929292;
+}
+
+.link{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  margin: 0.5% 1% 0% 0%;
+  color: #2F80ED;
+}
+
+.label_link{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration-line: none;
+  margin: 0.5% 1% 0% 0%;
+  color: #2F80ED;
+}
+
+.sort-by-word{
+  width: 149px;
+  height: 10px;
+  margin: 5% 0% 0% 0%;
+  padding: 1% 1% 1% 2%;
+  background: #FFFFFF;
+}

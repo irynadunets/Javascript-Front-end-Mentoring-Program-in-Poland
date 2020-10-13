@@ -1,0 +1,5 @@
+  <div class='row'>
+   <app-search-item class='item'  *ngFor='let item of items | filter:searchText | sort:filtrValue | sortDate:param1 | sortViews:param2'
+     [item]='item'
+   ></app-search-item>
+ </div>
