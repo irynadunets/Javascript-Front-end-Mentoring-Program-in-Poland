@@ -1,0 +1,13 @@
+<div class='container'>
+   <app-search-box class='search_box'></app-search-box>
+   <app-login class='login'></app-login>
+</div>
+   <div class='login_form'>
+     <h3 class='form_tittle'>Login</h3>
+     <label class='name'>login</label>
+     <input class='input' type='login' [(ngModel)]='login'>
+     <label class='name'>password</label>
+     <input class='input' type='password' [(ngModel)]='password'>
+     <button class='submit' (click)='onLogin()'>Login</button>
+     <div class='error' *ngIf = 'isShow'>Wrong username or password</div>
+   </div>

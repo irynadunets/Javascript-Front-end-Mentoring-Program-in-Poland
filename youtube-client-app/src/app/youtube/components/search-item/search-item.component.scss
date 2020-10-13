@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+}
+
+.card{
+  background: #E5E5E5;
+  border-radius: 5px;
+  width: 263px;
+  height: 327px;
+  padding: 2% 0%;
+  margin: 12% 2% 0% 2%;
+}
+
+.card_img{
+  width: 223px;
+  height: 123px;
+  background: yellow;
+  margin: 5% 7.5%;
+}
+
+.rate{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.row_rate{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  padding: 3% 10%;
+}
+
+.rate_count{
+  font-size: 12px;
+}
+
+.rate_viewed{
+  background: url('./img/viewed.png') no-repeat;
+  width: 25px;
+  height: 35px;
+}
+
+.rate_like{
+  background: url('./img/liked.png') no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.rate_dislike{
+  background: url('./img/dislike.png') no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.rate_vector{
+  background: url('./img/vector.png') no-repeat;
+  width: 15px;
+  height: 15px;
+}
+
+.card-content{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #4F4F4F;
+  height: 25%;
+}
+
+.card-action{
+  background: url('./img/background.png') no-repeat;
+  width: 120px;
+  height: 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0% auto;
+  padding: 0% 0% 0% 17%;
+  color: #FFFFFF;
+}
+
+.card-color{
+  position: relative;
+  width: 263px;
+  height: 5px;
+  left: 1px;
+  top: 12px;  
+  border-radius: 0px 0px 5px 5px;
+}

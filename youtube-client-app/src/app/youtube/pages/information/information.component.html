@@ -1,0 +1,24 @@
+<div class='wrapper'>
+   <app-header class='header'></app-header>
+</div>
+   <div class='container'>
+   <button class='back_button' (click)='return()'></button>
+   <div class='video'><img class= 'card_img' src={{card.snippet.thumbnails.standard.url}}></div>
+   <div class = 'card'>
+     <div class ='title'>
+       <div class='card-content'>{{card.snippet.title}}</div>
+       <div class='date' id ='date'>{{date}}</div>
+     </div>
+       <div class='text'>
+         <div class='title-description'>Description:</div>
+         <div class='text-description'>{{card.snippet.description}}</div>
+       </div>
+       <ul class='rate_row'>
+         <li class = 'rate'><div class='rate_viewed'></div><div class='rate_count'>{{card.statistics.viewCount}}</div></li>
+         <li class = 'rate'><div class='rate_like'></div><div class='rate_count'>{{card.statistics.likeCount}}</div></li>
+         <li class = 'rate'><div class='rate_dislike'></div><div class='rate_count'>{{card.statistics.dislikeCount}}</div></li>
+         <li class = 'rate'><div class='rate_vector'></div><div class='rate_count'>{{card.statistics.commentCount}}</div></li>
+       </ul>
+       <div class='card-color' [appColor] = 'color' ></div>
+   </div>
+   </div>
