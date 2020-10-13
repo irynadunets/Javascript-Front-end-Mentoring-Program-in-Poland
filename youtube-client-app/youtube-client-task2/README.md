@@ -103,5 +103,3 @@ https://angular.io/api/core/Pipe
 
 https://github.com/pavelrazuvalau/angular-lectures/tree/master/angular-components
 
-https://github.com/pavelrazuvalau/angular-lectures/tree/master/angular-directives-pipes
-

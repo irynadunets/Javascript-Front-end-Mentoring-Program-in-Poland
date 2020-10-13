@@ -1,0 +1,12 @@
+<div class = 'card'>
+    <img class= 'card_img' src={{item.snippet.thumbnails.default.url}}>
+      <ul class='row_rate'>
+        <li class = 'rate'><div class='rate_viewed'></div><div class='rate_count'>{{item.statistics.viewCount}}</div></li>
+        <li class = 'rate'><div class='rate_like'></div><div class='rate_count'>{{item.statistics.likeCount}}</div></li>
+        <li class = 'rate'><div class='rate_dislike'></div><div class='rate_count'>{{item.statistics.dislikeCount}}</div></li>
+        <li class = 'rate'><div class='rate_vector'></div><div class='rate_count'>{{item.statistics.commentCount}}</div></li>
+      </ul>
+    <div class='card-content'>{{item.snippet.title}}</div>
+    <button class='card-action' (click)="showInformation()"> more...</button>
+    <div class='card-color' [appColor] = 'color' ></div>
+</div>

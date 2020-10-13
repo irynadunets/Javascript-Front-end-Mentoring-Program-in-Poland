@@ -1,0 +1,7 @@
+  <ul class='tabs' >
+    <li class='label'>Sorting by:</li>
+    <li class='link'><a  type='link' (click)="sortDate('date')">data</a></li>
+    <li class='link'><a  type='link' (click)="sortViews('views')">count of views</a></li>
+    <li class='label_link'>by words or sentence</li>
+    <li><input placeholder='sort by word' type='input' class='sort-by-word' [(ngModel)]='filtrValue' (ngModelChange)='onSort()' ></li>
+</ul>

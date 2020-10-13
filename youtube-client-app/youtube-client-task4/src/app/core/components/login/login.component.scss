@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+}
+
+.user_login {
+  float:left;
+  width: 102px;
+  height: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #4F4F4F;
+  padding: 0.8% 2% 0% 0%;
+}
+
+.login {
+  background: url('./img/login.png') no-repeat;
+  width: 24px;
+  height: 24px;
+  margin: 0% 0% 0% 0%;
+}
+
+.logout {
+  align-self: flex-end;
+  width: 44px;
+  height: 24px;
+  background: #2F80ED;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  margin: 0% 0% 2% 2%;  
+}
